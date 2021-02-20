@@ -8,7 +8,7 @@ public class Items {
 	
 	private Integer cantidad;
 	
-	private Items() {
+	public Items() {
 	}
 
 	public Items(Producto producto, Integer cantidad) {

@@ -1,4 +1,4 @@
-package com.productos.implementacion;
+package com.app.productos.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,9 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.productos.dao.IProductosDao;
-import com.productos.entities.Producto;
-import com.productos.services.IProductoServices;
+import com.app.productos.dao.IProductosDao;
+import com.app.productos.entities.Producto;
 
 @Service
 public class ProductoServices implements IProductoServices{
@@ -26,10 +25,12 @@ public class ProductoServices implements IProductoServices{
 	public Optional<Producto> findById(Long id) {
 		return productoDao.findById(id);
 	}
-	
-	@Transactional(readOnly = false)
-	public void create(Producto producto){
-		productoDao.save(producto);
+
+	@Override
+	public void create(Producto producto) {
+		// TODO Auto-generated method stub
+		
 	}
+	
 }
 

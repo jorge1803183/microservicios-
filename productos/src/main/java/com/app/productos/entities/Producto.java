@@ -1,4 +1,4 @@
-package com.productos.entities;
+package com.app.productos.entities;
 
 import java.io.Serializable;
 
@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Table(name = "PRODUCTOS")
 public class Producto implements Serializable{
 
-	private static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
@@ -28,14 +28,6 @@ public class Producto implements Serializable{
 	
 	public Producto() {
 		
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	public static void setSerialversionuid(long serialversionuid) {
-		serialVersionUID = serialversionuid;
 	}
 
 	public Long getId() {

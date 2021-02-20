@@ -1,7 +1,8 @@
-package com.productos.dao;
+package com.app.productos.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import com.productos.entities.Producto;
+
+import com.app.productos.entities.Producto;
 
 public interface IProductosDao extends CrudRepository<Producto, Long> {
 

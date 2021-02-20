@@ -1,9 +1,9 @@
-package com.productos.services;
+package com.app.productos.services;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.productos.entities.Producto;
+import com.app.productos.entities.Producto;
 
 public interface IProductoServices {
 
