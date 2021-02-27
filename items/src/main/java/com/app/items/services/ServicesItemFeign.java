@@ -11,7 +11,7 @@ import com.app.items.clientes.ProductoClienteRest;
 import com.app.items.models.Items;
 
 @Service
-@Primary
+
 public class ServicesItemFeign implements IServicesItem {
 	
 	@Autowired
